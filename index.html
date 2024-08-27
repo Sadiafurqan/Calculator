@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Calculator</title>
+    <style>
+        h1{
+            align-items: center;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+.display {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-size: 2em;
+    text-align: right;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.button {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+.button.operator {
+    background-color: #f0a500;
+    color: #fff;
+}
+
+.button.operator:hover {
+    background-color: #e08f00;
+}
+
+.button.equal {
+    background-color: #4caf50;
+    color: #fff;
+    grid-column: span 4;
+}
+
+.button.equal:hover {
+    background-color: #45a049;
+}
+
+.button.clear {
+    background-color: #e32513;
+    color: #fff;
+   
+}
+
+.button.clear:hover {
+    background-color: #e53935;
+}
+
+.button.decimal {
+    background-color: #ddd;
+}
+
+    </style>
+</head>
+<body>
+   
+    <div class="calculator">
+       
+        <div id="display" class="display">0</div>
+        
+        <div class="buttons">
+           
+            <button class="button operator">/</button>
+            <button class="button operator">*</button>
+            <button class="button operator">-</button>
+            <button class="button operator">+</button>
+            <button class="button number">7</button>
+            <button class="button number">8</button>
+            <button class="button number">9</button>
+            <button class="button number">4</button>
+            <button class="button number">5</button>
+            <button class="button number">6</button>
+            <button class="button number">1</button>
+            <button class="button number">2</button>
+            <button class="button number">3</button>
+            <button class="button number">0</button>
+            <button class="button decimal">.</button>
+            <button class="button clear">C</button>
+            <button class="button equal">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
